@@ -6,56 +6,44 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface SrtRow {
+        "align": "stretch"|"start"| "center"| "end";
+        "alignContent": "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "column": boolean;
+        "justify": "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "nowrap": boolean;
+        "space": string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLSrtRowElement extends Components.SrtRow, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLSrtRowElement: {
+        prototype: HTMLSrtRowElement;
+        new (): HTMLSrtRowElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "srt-row": HTMLSrtRowElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface SrtRow {
+        "align"?: "stretch"|"start"| "center"| "end";
+        "alignContent"?: "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "column"?: boolean;
+        "justify"?: "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "nowrap"?: boolean;
+        "space"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "srt-row": SrtRow;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "srt-row": LocalJSX.SrtRow & JSXBase.HTMLAttributes<HTMLSrtRowElement>;
         }
     }
 }

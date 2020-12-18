@@ -1,0 +1,70 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &[data-column] {
+    flex-direction: column;
+  }
+  &[data-nowrap] {
+    flex-wrap: nowrap;
+  }
+  &[data-justifyContent='start'] {
+    justify-content: start;
+  }
+  &[data-justifyContent='center'] {
+    justify-content: center;
+  }
+  &[data-justifyContent='end'] {
+    justify-content: end;
+  }
+  &[data-justifyContent='space-between'] {
+    justify-content: space-between;
+  }
+  &[data-justifyContent='space-around'] {
+    justify-content: space-around;
+  }
+  &[data-justifyContent='space-evenly'] {
+    justify-content: space-evenly;
+  }
+  &[data-justifyContent='stretch'] {
+    justify-content: stretch;
+  }
+
+  &[data-alignItems='stretch'] {
+    align-items: stretch;
+  }
+  &[data-alignItems='start'] {
+    align-items: start;
+  }
+  &[data-alignItems='center'] {
+    align-items: center;
+  }
+  &[data-alignItems='end'] {
+    align-items: end;
+  }
+
+  &[data-alignContent='start'] {
+    align-content: start;
+  }
+  &[data-alignContent='center'] {
+    align-content: center;
+  }
+  &[data-alignContent='end'] {
+    align-content: end;
+  }
+  &[data-alignContent='space-between'] {
+    align-content: space-between;
+  }
+  &[data-alignContent='space-around'] {
+    align-content: space-around;
+  }
+  &[data-alignContent='space-evenly'] {
+    align-content: space-evenly;
+  }
+  &[data-alignContent='stretch'] {
+    align-content: stretch;
+  }
+  .srt-spacer {
+    flex-grow: 1;
+  }
+}
