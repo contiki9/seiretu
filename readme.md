@@ -5,9 +5,9 @@
 ```
 <script type="module" src="//cdn.jsdelivr.net/gh/contiki9/seiretu/www/build/seiretu.esm.js"></script>
 <script nomodule src="//cdn.jsdelivr.net/gh/contiki9/seiretu/www/build/seiretu.js"></script>
+```
 
 [storybook](https://contiki9.github.io/seiretu/)
-```
 
 ## develop
 
