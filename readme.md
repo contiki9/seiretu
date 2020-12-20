@@ -1,5 +1,9 @@
 # seiretu
 
+seiretu is a WebComponent that makes it easy to adjust the layout.
+
+seiretu is based on flexbox.
+
 ## Using this component
 
 ```
