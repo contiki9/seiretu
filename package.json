@@ -20,19 +20,24 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "storybook": "start-storybook -s ./dist"
+    "storybook": "start-storybook -s ./dist",
+    "prebuild-storybook": "npm run build",
+    "build-storybook": "build-storybook -s ./dist",
+    "deploy-storybook": "storybook-to-ghpages",
+    "deploy": "npm run build && npm run deploy-storybook"
   },
   "dependencies": {
     "@stencil/core": "^2.0.1",
-    "@storybook/addon-knobs": "^6.1.11",
-    "@storybook/addon-notes": "^5.3.21"
+    "@storybook/addon-knobs": "^6.1.11"
   },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@stencil/sass": "^1.4.1",
     "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-notes": "^5.3.21",
     "@storybook/html": "^6.1.10",
+    "@storybook/storybook-deployer": "^2.8.7",
     "babel-loader": "^8.2.2"
   }
 }

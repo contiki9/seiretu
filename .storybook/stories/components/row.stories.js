@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/html';
 import { withKnobs, select,boolean,text } from '@storybook/addon-knobs';
 import { withActions } from '@storybook/addon-actions';
-
+import notes from '../../../src/components/srt-row/readme.md';
 
 storiesOf('components', module)
   .addDecorator(withActions('onClick'))
@@ -39,20 +39,20 @@ storiesOf('components', module)
     const space = text('space', '40px',group);
     const nowrap = boolean('nowrap', false, group);
     const column = boolean('column', false, group);
-    return(`
-      <srt-row
+
+    return(`<srt-row
        justify = ${justify}
        align = ${align}
        nowrap = ${nowrap}
        space = ${space}
        column = ${column}
+       alignContent = ${alignContent}
        >
-            <div>sample
-              <div>ssss</div>
-            </div>
-              <div>sample2</div>
-              <div>sample3</div>
-      </srt-row>`
-    )
-    }
-  )
+        <div>sample
+          <div>ssss</div>
+        </div>
+          <div>sample2</div>
+          <div>sample3</div>
+      </srt-row>`)
+    },{ notes }
+  );
