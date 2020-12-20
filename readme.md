@@ -13,6 +13,14 @@ seiretu is based on flex box.
 
 [storybook](https://contiki9.github.io/seiretu/)
 
+```
+<srt-row justify="center" align="center" nowrap space="80px">
+  <!-- slot  -->
+</srt-row>
+```
+
+[use Property](https://contiki9.github.io/seiretu/?path=/info/components--row)
+
 ## develop
 
 ```bash
