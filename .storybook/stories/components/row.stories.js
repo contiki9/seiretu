@@ -43,12 +43,12 @@ storiesOf('components', module)
       const column = boolean('column', false, group);
 
       return `<srt-row
-       justify = ${justify}
-       align = ${align}
-       nowrap = ${nowrap}
-       margin = ${margin}
-       column = ${column}
-       alignContent = ${alignContent}
+       justify = "${justify}"
+       align = "${align}"
+       nowrap = "${nowrap}"
+       margin = "${margin}"
+       column = "${column}"
+       alignContent = "${alignContent}"
        >
         <div>sample
           <div>ssss</div>

@@ -18,7 +18,7 @@
 
   ### Break Point
 
-  ` {padding} or {margin}``{layout} `-`{BleakPoint}`-`{size}`
+  ` {padding} or {margin}` `{layout}`-`{BleakPoint}`-`{size}`
 
   - `ma-min-1`
   - `ma-s-1`
@@ -34,7 +34,8 @@
 
   BleakPoint
 
-  ```
+  <pre>
+  <code>
   (min, '(nax-width: 350px)'),
   //small
   (s, '(min-width: 351px) and (max-width: 767px)'),
@@ -49,9 +50,11 @@
   (lmin, '(max-width: 1280px)'),
   (lmax, '(min-width: 1025px)'),
   (max, '(min-width: 1280px)')
-  ```
+  </code>
+  </pre>
 
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
@@ -60,6 +63,7 @@
 | `class`   | `class`   |             | `string`                    | `undefined` |
 | `display` | `display` |             | `"block" \| "inline-block"` | `'block'`   |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

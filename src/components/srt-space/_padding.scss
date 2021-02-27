@@ -1,4 +1,4 @@
-#{$prefixPadding}-0 {
+#{$prefixPadding}a-0 {
   padding: 0 !important;
 }
 
@@ -28,7 +28,7 @@
   padding-left: 0 !important;
 }
 
-#{$prefixPadding} {
+#{$prefixPadding}a {
   padding: $space !important;
 }
 
@@ -59,7 +59,7 @@
 }
 
 @each $multiplier in $multipliers {
-  #{$prefixPadding}#{$delimiter}#{$multiplier} {
+  #{$prefixPadding}a#{$delimiter}#{$multiplier} {
     padding: $space * $multiplier !important;
   }
 
@@ -95,7 +95,7 @@
   $breakpoint: nth($size, 2);
 
   @media #{$breakpoint} {
-    #{$prefixPadding}#{$delimiter}#{$name}#{$delimiter}0 {
+    #{$prefixPadding}a#{$delimiter}#{$name}#{$delimiter}0 {
       padding: 0 !important;
     }
 
@@ -125,7 +125,7 @@
       padding-left: 0 !important;
     }
 
-    #{$prefixPadding}#{$delimiter}#{$name} {
+    #{$prefixPadding}a#{$delimiter}#{$name} {
       padding: $space !important;
     }
 
@@ -156,7 +156,7 @@
     }
 
     @each $multiplier in $multipliers {
-      #{$prefixPadding}#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+      #{$prefixPadding}a#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
         padding: $space * $multiplier !important;
       }
 

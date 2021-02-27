@@ -12,8 +12,8 @@ export class SrtSpace {
   render() {
     return (
       <Host>
-        <div class={`${this.class} space`} data-display={this.display}>
-          aaaaa
+        <div class={this.class} data-display={this.display}>
+          <slot></slot>
         </div>
       </Host>
     );

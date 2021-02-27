@@ -1,4 +1,4 @@
-#{$prefixMargin}#{$delimiter}0 {
+#{$prefixMargin}a#{$delimiter}0 {
   margin: 0 !important;
 }
 
@@ -28,7 +28,7 @@
   margin-left: 0 !important;
 }
 
-#{$prefixMargin}#{$delimiter}a {
+#{$prefixMargin}a#{$delimiter}a {
   margin: auto !important;
 }
 
@@ -58,7 +58,7 @@
   margin-left: auto !important;
 }
 
-#{$prefixMargin} {
+#{$prefixMargin}a {
   margin: $space !important;
 }
 
@@ -89,7 +89,7 @@
 }
 
 @each $multiplier in $multipliers {
-  #{$prefixMargin}#{$delimiter}#{$multiplier} {
+  #{$prefixMargin}a#{$delimiter}#{$multiplier} {
     margin: $space * $multiplier !important;
   }
 
@@ -125,7 +125,7 @@
   $breakpoint: nth($size, 2);
 
   @media #{$breakpoint} {
-    #{$prefixMargin}-#{$name}-0 {
+    #{$prefixMargin}a#{$delimiter}#{$name}-0 {
       margin: 0 !important;
     }
 
@@ -155,7 +155,7 @@
       margin-left: 0 !important;
     }
 
-    #{$prefixMargin}-#{$name}-a {
+    #{$prefixMargin}a#{$delimiter}#{$name}-a {
       margin: auto !important;
     }
 
@@ -185,7 +185,7 @@
       margin-left: auto !important;
     }
 
-    #{$prefixMargin}#{$delimiter}#{$name} {
+    #{$prefixMargin}a#{$delimiter}#{$name} {
       margin: $space !important;
     }
 
@@ -216,7 +216,7 @@
     }
 
     @each $multiplier in $multipliers {
-      #{$prefixMargin}#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+      #{$prefixMargin}a#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
         margin: $space * $multiplier !important;
       }
 
