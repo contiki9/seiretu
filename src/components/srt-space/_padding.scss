@@ -1,0 +1,190 @@
+#{$prefixPadding}-0 {
+  padding: 0 !important;
+}
+
+#{$prefixPadding}t-0 {
+  padding-top: 0 !important;
+}
+
+#{$prefixPadding}r-0 {
+  padding-right: 0 !important;
+}
+
+#{$prefixPadding}b-0 {
+  padding-bottom: 0 !important;
+}
+
+#{$prefixPadding}l-0 {
+  padding-left: 0 !important;
+}
+
+#{$prefixPadding}x-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#{$prefixPadding}y-0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+#{$prefixPadding} {
+  padding: $space !important;
+}
+
+#{$prefixPadding}t {
+  padding-top: $space !important;
+}
+
+#{$prefixPadding}r {
+  padding-right: $space !important;
+}
+
+#{$prefixPadding}b {
+  padding-bottom: $space !important;
+}
+
+#{$prefixPadding}l {
+  padding-left: $space !important;
+}
+
+#{$prefixPadding}x {
+  padding-top: $space !important;
+  padding-bottom: $space !important;
+}
+
+#{$prefixPadding}y {
+  padding-right: $space !important;
+  padding-left: $space !important;
+}
+
+@each $multiplier in $multipliers {
+  #{$prefixPadding}#{$delimiter}#{$multiplier} {
+    padding: $space * $multiplier !important;
+  }
+
+  #{$prefixPadding}t#{$delimiter}#{$multiplier} {
+    padding-top: $space * $multiplier !important;
+  }
+
+  #{$prefixPadding}r#{$delimiter}#{$multiplier} {
+    padding-right: $space * $multiplier !important;
+  }
+
+  #{$prefixPadding}b#{$delimiter}#{$multiplier} {
+    padding-bottom: $space * $multiplier !important;
+  }
+
+  #{$prefixPadding}l#{$delimiter}#{$multiplier} {
+    padding-left: $space * $multiplier !important;
+  }
+
+  #{$prefixPadding}x#{$delimiter}#{$multiplier} {
+    padding-top: $space * $multiplier !important;
+    padding-bottom: $space * $multiplier !important;
+  }
+
+  #{$prefixPadding}y#{$delimiter}#{$multiplier} {
+    padding-right: $space * $multiplier !important;
+    padding-left: $space * $multiplier !important;
+  }
+}
+
+@each $size in $sizes {
+  $name: nth($size, 1);
+  $breakpoint: nth($size, 2);
+
+  @media #{$breakpoint} {
+    #{$prefixPadding}#{$delimiter}#{$name}#{$delimiter}0 {
+      padding: 0 !important;
+    }
+
+    #{$prefixPadding}t#{$delimiter}#{$name}#{$delimiter}0 {
+      padding-top: 0 !important;
+    }
+
+    #{$prefixPadding}r#{$delimiter}#{$name}#{$delimiter}0 {
+      padding-right: 0 !important;
+    }
+
+    #{$prefixPadding}b#{$delimiter}#{$name}#{$delimiter}0 {
+      padding-bottom: 0 !important;
+    }
+
+    #{$prefixPadding}l#{$delimiter}#{$name}#{$delimiter}0 {
+      padding-left: 0 !important;
+    }
+
+    #{$prefixPadding}x#{$delimiter}#{$name}#{$delimiter}0 {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    #{$prefixPadding}y#{$delimiter}#{$name}#{$delimiter}0 {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    #{$prefixPadding}#{$delimiter}#{$name} {
+      padding: $space !important;
+    }
+
+    #{$prefixPadding}t#{$delimiter}#{$name} {
+      padding-top: $space !important;
+    }
+
+    #{$prefixPadding}r#{$delimiter}#{$name} {
+      padding-right: $space !important;
+    }
+
+    #{$prefixPadding}b#{$delimiter}#{$name} {
+      padding-bottom: $space !important;
+    }
+
+    #{$prefixPadding}l#{$delimiter}#{$name} {
+      padding-left: $space !important;
+    }
+
+    #{$prefixPadding}x#{$delimiter}#{$name} {
+      padding-top: $space !important;
+      padding-bottom: $space !important;
+    }
+
+    #{$prefixPadding}y#{$delimiter}#{$name} {
+      padding-right: $space !important;
+      padding-left: $space !important;
+    }
+
+    @each $multiplier in $multipliers {
+      #{$prefixPadding}#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+        padding: $space * $multiplier !important;
+      }
+
+      #{$prefixPadding}t#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+        padding-top: $space * $multiplier !important;
+      }
+
+      #{$prefixPadding}r#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+        padding-right: $space * $multiplier !important;
+      }
+
+      #{$prefixPadding}b#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+        padding-bottom: $space * $multiplier !important;
+      }
+
+      #{$prefixPadding}l#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+        padding-left: $space * $multiplier !important;
+      }
+
+      #{$prefixPadding}x#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+        padding-top: $space * $multiplier !important;
+        padding-bottom: $space * $multiplier !important;
+      }
+
+      #{$prefixPadding}y#{$delimiter}#{$name}#{$delimiter}#{$multiplier} {
+        padding-right: $space * $multiplier !important;
+        padding-left: $space * $multiplier !important;
+      }
+    }
+  }
+}

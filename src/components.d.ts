@@ -14,6 +14,10 @@ export namespace Components {
         "margin": string;
         "nowrap": boolean;
     }
+    interface SrtSpace {
+        "class": string;
+        "display": 'block' | 'inline-block';
+    }
 }
 declare global {
     interface HTMLSrtRowElement extends Components.SrtRow, HTMLStencilElement {
@@ -22,8 +26,15 @@ declare global {
         prototype: HTMLSrtRowElement;
         new (): HTMLSrtRowElement;
     };
+    interface HTMLSrtSpaceElement extends Components.SrtSpace, HTMLStencilElement {
+    }
+    var HTMLSrtSpaceElement: {
+        prototype: HTMLSrtSpaceElement;
+        new (): HTMLSrtSpaceElement;
+    };
     interface HTMLElementTagNameMap {
         "srt-row": HTMLSrtRowElement;
+        "srt-space": HTMLSrtSpaceElement;
     }
 }
 declare namespace LocalJSX {
@@ -35,8 +46,13 @@ declare namespace LocalJSX {
         "margin"?: string;
         "nowrap"?: boolean;
     }
+    interface SrtSpace {
+        "class"?: string;
+        "display"?: 'block' | 'inline-block';
+    }
     interface IntrinsicElements {
         "srt-row": SrtRow;
+        "srt-space": SrtSpace;
     }
 }
 export { LocalJSX as JSX };
@@ -44,6 +60,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "srt-row": LocalJSX.SrtRow & JSXBase.HTMLAttributes<HTMLSrtRowElement>;
+            "srt-space": LocalJSX.SrtSpace & JSXBase.HTMLAttributes<HTMLSrtSpaceElement>;
         }
     }
 }
