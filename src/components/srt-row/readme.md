@@ -11,8 +11,8 @@
 | `alignContent` | `align-content` |             | `"center" \| "end" \| "space-around" \| "space-between" \| "space-evenly" \| "start" \| "stretch"` | `undefined` |
 | `column`       | `column`        |             | `boolean`                                                                                          | `undefined` |
 | `justify`      | `justify`       |             | `"center" \| "end" \| "space-around" \| "space-between" \| "space-evenly" \| "start" \| "stretch"` | `undefined` |
+| `margin`       | `margin`        |             | `string`                                                                                           | `undefined` |
 | `nowrap`       | `nowrap`        |             | `boolean`                                                                                          | `undefined` |
-| `space`        | `space`         |             | `string`                                                                                           | `undefined` |
 
 
 ----------------------------------------------

@@ -7,12 +7,12 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SrtRow {
-        "align": "stretch"|"start"| "center"| "end";
-        "alignContent": "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "align": 'stretch' | 'start' | 'center' | 'end';
+        "alignContent": 'stretch' | 'start' | 'center' | 'end' | 'space-between' | 'space-around' | 'space-evenly';
         "column": boolean;
-        "justify": "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "justify": 'stretch' | 'start' | 'center' | 'end' | 'space-between' | 'space-around' | 'space-evenly';
+        "margin": string;
         "nowrap": boolean;
-        "space": string;
     }
 }
 declare global {
@@ -28,12 +28,12 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SrtRow {
-        "align"?: "stretch"|"start"| "center"| "end";
-        "alignContent"?: "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "align"?: 'stretch' | 'start' | 'center' | 'end';
+        "alignContent"?: 'stretch' | 'start' | 'center' | 'end' | 'space-between' | 'space-around' | 'space-evenly';
         "column"?: boolean;
-        "justify"?: "stretch"|"start"| "center"| "end"|"space-between"| "space-around" | "space-evenly";
+        "justify"?: 'stretch' | 'start' | 'center' | 'end' | 'space-between' | 'space-around' | 'space-evenly';
+        "margin"?: string;
         "nowrap"?: boolean;
-        "space"?: string;
     }
     interface IntrinsicElements {
         "srt-row": SrtRow;
