@@ -19,6 +19,12 @@ seiretu is based on flex box.
 </srt-row>
 ```
 
+```
+<srt-space class="ma-5">
+  <!-- slot  -->
+</srt-space>
+```
+
 [use Property](https://contiki9.github.io/seiretu/?path=/info/components--row)
 
 ## develop
