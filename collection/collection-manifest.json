@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "./components/srt-row/srt-row.js",
+    "./components/srt-space/srt-space.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.3.0",
+    "typescriptVersion": "4.0.5"
+  },
+  "collections": [],
+  "bundles": []
+}
