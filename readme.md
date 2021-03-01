@@ -14,7 +14,7 @@ seiretu is based on flex box.
 [storybook](https://contiki9.github.io/seiretu/)
 
 ```
-<srt-row justify="center" align="center" nowrap space="80px">
+<srt-row justify="center" align="center" nowrap margin="80px">
   <!-- slot  -->
 </srt-row>
 ```
